@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "MOCDEMSNEW/1.0.0": {
+        "runtime": {
+          "MOCDEMSNEW.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "MOCDEMSNEW/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
