@@ -1,0 +1,15 @@
+﻿using System;
+using System.Collections.Generic;
+
+namespace MOCDEMSNEW.Models;
+
+public partial class RepRemarkCategoryOldVersion16Feb13
+{
+    public int RrcId { get; set; }
+
+    public string? RrcTitle { get; set; }
+
+    public int? RrcSortOrder { get; set; }
+
+    public DateTime? RrcCreateDate { get; set; }
+}
