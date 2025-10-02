@@ -1,9 +1,13 @@
 using System.Diagnostics;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using MOCDEMSNEW.Models;
 
 namespace MOCDEMSNEW.Controllers
 {
+    
+    // Important!!
+    [Authorize] // If you remove this annotation cannot start to login page.
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;

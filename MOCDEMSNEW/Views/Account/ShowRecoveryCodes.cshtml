@@ -1,0 +1,15 @@
+﻿@model string[]
+@{
+    Layout = "_ShowRecoveryCodesLayout";
+    ViewData["Title"] = "ShowRecoveryCodes";
+}
+
+<h1>ShowRecoveryCodes</h1>
+<h2>Recovery codes</h2>
+<p>Save the codes somewhere safe. Each code can be used once.</p>
+<ul>
+    @foreach (var c in Model)
+    {
+        <li>@c</li>
+    }
+</ul>

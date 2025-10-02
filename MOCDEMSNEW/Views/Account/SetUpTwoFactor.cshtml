@@ -1,0 +1,30 @@
+﻿@model MOCDEMSNEW.Models.ViewModel.SetupTwoFactorViewModel
+@{
+    Layout = "_SetUpTwoFactorLayout";
+    ViewData["Title"] = "SetUpTwoFactor";
+}
+
+<h1>SetUpTwoFactor</h1>
+<h2>Setup Two-Factor Authentication</h2>
+
+<p>Scan this QR code with Google Authenticator or Authy:</p>
+
+<img src="@Model.QRCodeImage" alt="QR Code" />
+
+<h3>Recovery Codes</h3>
+<ul>
+    @foreach (var code in Model.RecoveryCodes)
+    {
+        <li>@code</li>
+    }
+</ul>
+
+<form method="post" asp-action="ConfirmTwoFactor">
+    <div class="form-group">
+        <label asp-for="VerificationCode">Enter the 6-digit code from your authenticator app:</label>
+        <input asp-for="VerificationCode" class="form-control" />
+        <span asp-validation-for="VerificationCode" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-success mt-2">Enable</button>
+</form>
+
