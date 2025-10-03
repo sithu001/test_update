@@ -28,6 +28,12 @@ namespace MOCDEMSNEW.Controllers
         }
 
         [HttpGet]
+        public IActionResult AccessDenied()
+        {
+            return View();
+        }
+
+        [HttpGet]
         public IActionResult Login()
         {
             return View(new LoginViewModel());
@@ -37,10 +43,13 @@ namespace MOCDEMSNEW.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Login(LoginViewModel model)
         {
-
+           
             if (!ModelState.IsValid) return View(model);
 
-            var user = _context.Employees.FirstOrDefault(u => u.EEmail == model.Email && u.EPassword == model.Password && u.EActive == true);
+            var user = _context.Employees
+                .FirstOrDefault(u => u.EEmail == model.Email
+                                  && u.EPassword == model.Password
+                                  && u.EActive == true);
 
             if (user == null)
             {
@@ -48,7 +57,28 @@ namespace MOCDEMSNEW.Controllers
                 return View(model);
             }
 
-            var employee2FA = _context.EmployeeTwoFactors.FirstOrDefault(t => t.EmployeeId == user.EId && t.IsEnabled);
+            // 🔹 Check subdomain vs role
+            var host = HttpContext.Request.Host.Host.ToLower();
+
+            if (host.StartsWith("admin."))
+            {
+                // If accessing admin subdomain but user is not admin → AccessDenied
+                if (user.EIsAdmin != 1)
+                    return RedirectToAction("AccessDenied");
+            }
+            else
+            {
+                // If accessing normal domain but user is admin → redirect to admin subdomain login
+                if (user.EIsAdmin == 1)
+                {
+                    string adminHost = $"https://admin.localhost:{HttpContext.Request.Host.Port}/Account/Login";
+                    return Redirect(adminHost);
+                }
+            }
+
+            
+            var employee2FA = _context.EmployeeTwoFactors
+                .FirstOrDefault(t => t.EmployeeId == user.EId && t.IsEnabled);
 
             if (employee2FA != null)
             {
@@ -58,7 +88,6 @@ namespace MOCDEMSNEW.Controllers
             }
             else
             {
-                // User does not have TwoFactor force setup
                 TempData["UserIdSetup2FA"] = user.EId;
                 TempData["RememberMe"] = model.RememberMe;
                 return RedirectToAction("SetupTwoFactor");
@@ -66,6 +95,7 @@ namespace MOCDEMSNEW.Controllers
 
             await SignInUser(user, model.RememberMe);
 
+            // Redirect as usual
             return RedirectToAction("Index", "Home");
 
         }
