@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MOCDEMSNEW")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d741a3ad5a8642c5f875a34c4d57ac8adb42af6c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+37b4f2046fdb0011f85e957879587fc2a042bccb")]
 [assembly: System.Reflection.AssemblyProductAttribute("MOCDEMSNEW")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MOCDEMSNEW")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
