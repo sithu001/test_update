@@ -1,0 +1,54 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = "_AdminLayout";
+}
+<div class="container d-flex justify-content-center align-items-center" style="height: calc(100vh - 100px);">
+    <div class="d-flex flex-column justify-content-center align-items-center h-100 mainNav">
+        <div class="row row-cols-2 row-cols-md-3 g-3 w-100">
+
+            <div class="col">
+                <a asp-action="ReportCategory" asp-controller="Admin" class="btn w-100 h-100 position-relative">
+                    <i class="custom-icon fa-solid fa-file-waveform w-25 h-50"></i>
+                    <h5 class="text-uppercase text-dark fw-bold fs-6">Report Categories</h5>
+                </a>
+            </div>
+
+            <div class="col">
+                <a asp-action="ArchiveReportCategory" asp-controller="Admin" class="btn w-100 h-100 position-relative">
+                    <i class="custom-icon fa-solid fa-file-zipper w-25 h-50"></i>
+                    <h5 class="text-uppercase text-dark fw-bold fs-6">Archived Report Categories</h5>
+                </a>
+            </div>
+
+            <div class="col">
+                <a asp-action="Reports" asp-controller="Admin" class="btn w-100 h-100 position-relative">
+                    <i class="custom-icon fa-solid fa-file-alt w-25 h-50"></i>
+                    <h5 class="text-uppercase text-dark fw-bold fs-6">Reports</h5>
+                </a>
+            </div>
+
+            <div class="col">
+                <a asp-action="TurnDownReport" asp-controller="Admin" class="btn w-100 h-100 position-relative">
+                    <i class="custom-icon fa-solid fa-file-arrow-down w-25 h-50"></i>
+                    <h5 class="text-uppercase text-dark fw-bold fs-6">Turn Down Reports</h5>
+                </a>
+            </div>
+
+            <div class="col">
+                <a asp-action="ReportRemarkCategory" asp-asp-controller="Admin" class="btn w-100 h-100 position-relative">
+                    <i class="custom-icon fa-solid fa-comment w-25 h-50"></i>
+                    <h5 class="text-uppercase text-dark fw-bold fs-6">Report Remark Category</h5>
+                </a>
+            </div>
+
+            <div class="col">
+                <a asp-action="ReportRemarkType" asp-controller="Admin" class="btn w-100 h-100 position-relative">
+                    <i class="custom-icon fa-solid fa-sticky-note w-25 h-50"></i>
+                    <h5 class="text-uppercase text-dark fw-bold fs-6">Report Remark Type</h5>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

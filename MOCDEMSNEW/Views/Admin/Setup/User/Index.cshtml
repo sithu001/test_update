@@ -1,0 +1,188 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = "_AdminLayout";
+}
+<div class="container custom-bg mt-5">
+    <div class="mb-5">
+        <a href="javascript:history.back()" class="text-secondary text-decoration-none fw-bold">
+            <i class="fa-solid fa-arrow-left me-1"></i> Go Back
+        </a>
+    </div>
+
+    <div class="text-center mb-5">
+        <h5 class="text-dark text-uppercase fw-bold">
+            <i class="fa-solid fa-users fs-5 px-2"></i>Users
+        </h5>
+    </div>
+
+    <form action="" class="mb-5 ms-md-5">
+        <div class="row mb-3 justify-content-start">
+            <div class="col-sm-2 text-dark fw-bold fs-6">
+                <label for="Name" class="form-label">Name</label>
+            </div>
+            <div class="col-auto col-sm-auto col-md-auto">
+                <input type="text" class="form-control" id="Name">
+            </div>
+        </div>
+        <div class="row mb-3 justify-content-start">
+            <div class="col-sm-2 text-dark fw-bold fs-6">
+                <label for="department" class="form-label">Department</label>
+            </div>
+            <div class="col-auto col-sm-auto col-md-auto">
+                <select class="form-select form-select-sm" style="font-size: 14px; line-height: 1.5rem;"
+                        id="department">
+                    <option selected>Select Department</option>
+                    <option value="1">ကုန်သွယ်ရေးဦးစီးဌာန</option>
+                    <option value="2">စားသုံးသူရေးရာဦးစီးဌာန</option>
+                    <option value="3">eLibrary</option>
+                    <option value="4">မြန်မာကုန်သွယ်မှုမြှင့်တင်ရေးအဖွဲ့ </option>
+                </select>
+            </div>
+        </div>
+        <div class="row mb-3 justify-content-start">
+            <div class="col-sm-2 text-dark fw-bold fs-6">
+                <label for="userLevel" class="form-label">User Level</label>
+            </div>
+            <div class="col-auto col-sm-auto col-md-auto">
+                <select class="form-select form-select-sm" style="font-size: 14px; line-height: 1.5rem;"
+                        id="userLevel">
+                    <option selected>Select User Level</option>
+                    <option value="1">Adminstrator (view all,update all,user creation)</option>
+                    <option value="2">Department Level</option>
+                    <option value="3">Section Level</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-auto col-sm-auto col-md-auto offset-sm-2">
+                <button type="button"
+                        class="btn btn-golden text-uppercase fw-bold rounded-pill mb-3 ">
+                    <i class="fa-solid fa-magnifying-glass me-1 fs-6"></i>Search
+                </button>
+            </div>
+        </div>
+    </form>
+
+    <div class="table-responsive">
+        <table class="table custom-table">
+            <thead>
+                <tr>
+                    <th>
+                        No.
+                    </th>
+                    <th>
+                        Full Name
+                    </th>
+                    <th>
+                        Name
+                    </th>
+                    <th>
+                        Position
+                    </th>
+                    <th>
+                        Department
+                    </th>
+                    <th>
+                        Section
+                    </th>
+                    <th>
+                        Action
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-label="No.">1</td>
+                    <td data-label="Full Name">ဒေါ်ထက်ထက်ဝင်း</td>
+                    <td data-label="Name">Hhwin</td>
+                    <td data-label="Position">နေ့စား</td>
+                    <td data-label="Department">ကုန်သွယ်ရေးဦးစီးဌာန</td>
+                    <td data-label="Section">စီမံကိန်းနှင့်စာရင်းအင်းဌာနခွဲ</td>
+                    <td data-label="Action">
+                        <a href="#"
+                           class="btn btn-gold rounded-pill text-dark fw-bold mb-1 mb-sm-1 mb-md-1 mb-lg-0">
+                            <i class="fa-solid fa-user-pen fs-5"></i>Edit
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-label="No.">2</td>
+                    <td data-label="Full Name">ဦးအောင်ခန့်ဖြိုး</td>
+                    <td data-label="Name">aungKP</td>
+                    <td data-label="Position">နေ့စား</td>
+                    <td data-label="Department">ကုန်သွယ်ရေးဦးစီးဌာန</td>
+                    <td data-label="Section">စီမံရေးရာဌာနခွဲ</td>
+                    <td data-label="Action">
+                        <a href="#"
+                           class="btn btn-gold rounded-pill text-dark fw-bold mb-1 mb-sm-1 mb-md-1 mb-lg-0">
+                            <i class="fa-solid fa-user-pen fs-5"></i>Edit
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-label="No.">2</td>
+                    <td data-label="Full Name">ဦးအောင်ခန့်ဖြိုး</td>
+                    <td data-label="Name">aungKP</td>
+                    <td data-label="Position">နေ့စား</td>
+                    <td data-label="Department">ကုန်သွယ်ရေးဦးစီးဌာန</td>
+                    <td data-label="Section">စီမံရေးရာဌာနခွဲ</td>
+                    <td data-label="Action">
+                        <a href="#"
+                           class="btn btn-gold rounded-pill text-dark fw-bold mb-1 mb-sm-1 mb-md-1 mb-lg-0">
+                            <i class="fa-solid fa-user-pen fs-5"></i>Edit
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-label="No.">2</td>
+                    <td data-label="Full Name">ဦးအောင်ခန့်ဖြိုး</td>
+                    <td data-label="Name">aungKP</td>
+                    <td data-label="Position">နေ့စား</td>
+                    <td data-label="Department">ကုန်သွယ်ရေးဦးစီးဌာန</td>
+                    <td data-label="Section">စီမံရေးရာဌာနခွဲ</td>
+                    <td data-label="Action">
+                        <a href="#"
+                           class="btn btn-gold rounded-pill text-dark fw-bold mb-1 mb-sm-1 mb-md-1 mb-lg-0">
+                            <i class="fa-solid fa-user-pen fs-5"></i>Edit
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-label="No.">2</td>
+                    <td data-label="Full Name">ဦးအောင်ခန့်ဖြိုး</td>
+                    <td data-label="Name">aungKP</td>
+                    <td data-label="Position">နေ့စား</td>
+                    <td data-label="Department">ကုန်သွယ်ရေးဦးစီးဌာန</td>
+                    <td data-label="Section">စီမံရေးရာဌာနခွဲ</td>
+                    <td data-label="Action">
+                        <a href="#"
+                           class="btn btn-gold rounded-pill text-dark fw-bold mb-1 mb-sm-1 mb-md-1 mb-lg-0">
+                            <i class="fa-solid fa-user-pen fs-5"></i>Edit
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-label="No.">2</td>
+                    <td data-label="Full Name">ဦးအောင်ခန့်ဖြိုး</td>
+                    <td data-label="Name">aungKP</td>
+                    <td data-label="Position">နေ့စား</td>
+                    <td data-label="Department">ကုန်သွယ်ရေးဦးစီးဌာန</td>
+                    <td data-label="Section">စီမံရေးရာဌာနခွဲ</td>
+                    <td data-label="Action">
+                        <a href="#"
+                           class="btn btn-gold rounded-pill text-dark fw-bold mb-1 mb-sm-1 mb-md-1 mb-lg-0">
+                            <i class="fa-solid fa-user-pen fs-5"></i>Edit
+                        </a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="">
+        <a asp-action="NewUser" asp-asp-controller="Admin" class="btn btn-golden fw-bold rounded-pill mb-3">
+            <i class="fa-solid fa-plus fs-5"></i>New User
+        </a>
+    </div>
+</div>

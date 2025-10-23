@@ -1,0 +1,66 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = "_AdminLayout";
+}
+<div class="container custom-bg mt-5">
+    <div class="mb-5">
+        <a href="javascript:history.back()" class="text-secondary text-decoration-none fw-bold">
+            <i class="fa-solid fa-arrow-left me-1"></i> Go Back
+        </a>
+    </div>
+    <div class="text-center mb-5">
+        <h5 class="text-dark text-uppercase fw-bold"><i class="fa-solid fa-clipboard fs-5 px-2"></i>Note Sheets
+    </div>
+
+    <div class="table-responsive">
+        <table class="table custom-table">
+            <thead>
+                <tr>
+                    <th>
+                        No.
+                    </th>
+                    <th>
+                        Subject
+                    </th>
+                    <th>
+                        Date
+                    </th>
+                    <th style="width: 150px;">
+                        Action
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-label="No.">1</td>
+                    <td data-label="Subject">၂၀၁၃-၁၄ဘဏ္ဍာနှစ်တွင် ကွန်ပျူတာနှင့်ဆက်စပ်ပစ္စည်းဝယ်ယူရန်ဝန်ကြီးဌာနစီမံခန့်ခွဲရေးကော်မတီသို့တင်ပြမည့်အမှာစာအား အတည်ပြုလက်မှတ်ရေးထိုးပေးရန်ကိစ္စ</td>
+                    <td data-label="Date">2020-Apr-29</td>
+                    <td data-label="Action">
+                        <div class="action">
+                            <a href="#" class="btn btn-red rounded-pill text-dark fw-bold"
+                               onclick="return confirm('Are you sure to delete')">
+                                <i class="fa-solid fa-trash fs-5"></i>Delete
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-label="No.">2</td>
+                    <td data-label="Subject">မော်တော်ကားအရောင်းပြခန်းတွင်မော်တော်ယာဉ်ဝယ်ယူခွင့်ထုတ်ပေး နိုင်ရေး အကြောင်းကြားမည့်စာအား အတည်ပြုလက်မှတ်ရေးထိုးပေးရန်ကိစ္စ။</td>
+                    <td data-label="Date">2020-Apr-29</td>
+                    <td data-label="Action">
+                        <div class="action">
+                            <a href="#" class="btn btn-red rounded-pill text-dark fw-bold"
+                               onclick="return confirm('Are you sure to delete')">
+                                <i class="fa-solid fa-trash fs-5"></i>Delete
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+</div>

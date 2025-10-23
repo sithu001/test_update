@@ -1,0 +1,98 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = "_AdminLayout";
+}
+<div class="container custom-bg mt-5">
+    <div class="mb-5">
+        <a href="javascript:history.back()" class="text-secondary text-decoration-none fw-bold">
+            <i class="fa-solid fa-arrow-left me-1"></i> Go Back
+        </a>
+    </div>
+
+    <div class="text-center mb-5">
+        <h5 class="text-dark text-uppercase fw-bold">
+            <i class="fa-solid fa-video fs-5 px-2"></i>Meeting Type
+        </h5>
+    </div>
+
+    <div class="table-responsive">
+        <table class="table custom-table">
+            <thead>
+                <tr>
+                    <th>
+                        No.
+                    </th>
+                    <th>
+                        Title
+                    </th>
+                    <th>
+                        Sort Order
+                    </th>
+                    <th>
+                        Action
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-label="No.">1</td>
+                    <td data-label="Title">VC (NPT to YGN)</td>
+                    <td data-label="Sort Order">1</td>
+                    <td data-label="Action">
+                        <div class="action">
+                            <a href="#"
+                               class="btn btn-gold rounded-pill text-dark fw-bold mb-1 mb-sm-1 mb-md-1 mb-lg-0">
+                                <i class="fa-solid fa-user-pen fs-5"></i>Edit
+                            </a>
+                            <a href="#" class="btn btn-red rounded-pill text-dark fw-bold"
+                               onclick="return confirm('Are you sure to delete')">
+                                <i class="fa-solid fa-trash fs-5"></i>Delete
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-label="No.">2</td>
+                    <td data-label="Title">VC (NPT to Divisions)</td>
+                    <td data-label="Sort Order">2</td>
+                    <td data-label="Action">
+                        <div class="action">
+                            <a href="#"
+                               class="btn btn-gold rounded-pill text-dark fw-bold mb-1 mb-sm-1 mb-md-1 mb-lg-0">
+                                <i class="fa-solid fa-user-pen fs-5"></i>Edit
+                            </a>
+                            <a href="#" class="btn btn-red rounded-pill text-dark fw-bold"
+                               onclick="return confirm('Are you sure to delete')">
+                                <i class="fa-solid fa-trash fs-5"></i>Delete
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-label="No.">3</td>
+                    <td data-label="Title">VC (NPT to Border)</td>
+                    <td data-label="Sort Order">3</td>
+                    <td data-label="Action">
+                        <div class="action">
+                            <a href="#"
+                               class="btn btn-gold rounded-pill text-dark fw-bold mb-1 mb-sm-1 mb-md-1 mb-lg-0">
+                                <i class="fa-solid fa-user-pen fs-5"></i>Edit
+                            </a>
+                            <a href="#" class="btn btn-red rounded-pill text-dark fw-bold"
+                               onclick="return confirm('Are you sure to delete')">
+                                <i class="fa-solid fa-trash fs-5"></i>Delete
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="">
+        <a asp-action="NewMeetingType" asp-asp-controller="Admin" class="btn btn-golden fw-bold rounded-pill mb-3">
+            <i class="fa-solid fa-plus fs-5"></i>New Meeting Type
+        </a>
+    </div>
+</div>

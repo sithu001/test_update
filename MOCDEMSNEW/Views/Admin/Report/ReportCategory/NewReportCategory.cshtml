@@ -1,0 +1,68 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = "_AdminLayout";
+}
+<div class="container text-center mb-5 mt-5">
+    <h5 class="custom-text text-uppercase fw-bold">Create New Report Category</h5>
+</div>
+<div class="container custom-bg shadow-lg">
+    <div class="mb-5">
+        <a href="javascript:history.back()" class="text-secondary text-decoration-none fw-bold">
+            <i class="fa-solid fa-arrow-left me-1"></i> Go Back
+        </a>
+    </div>
+    <form action="" class="ms-md-5">
+        <div class="row mb-3">
+            <div class="col-md-2">
+                <label for="reportCategoryName" class="form-label">Report Category Name :</label>
+            </div>
+            <div class="col-md-6">
+                <input type="text" class="form-control" id="reportCategoryName"
+                       placeholder="Enter Report Category Name">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-md-2">
+                <label for="section" class="form-label">Section :</label>
+            </div>
+            <div class="col-md-6">
+                <select class="form-select form-select-sm" style="font-size: 14px; line-height: 1.5rem;"
+                        id="section">
+                    <option selected>Select Your Section</option>
+                    <option value="1">
+                        ပြည်ထောင်စုဝန်ကြီးရုံး-အုပ်ချုပ်ရေးနှင့်လူ့အရင်းအမြစ်စီမံခန့်ခွဲမှုဌာနခွဲ
+                    </option>
+                    <option value="2">ကုန်သွယ်ရေးဦးစီးဌာန-ညွှန်ကြားရေးမှူးချုပ်ဦးစီးရုံး</option>
+                    <option value="3">
+                        စားသုံးသူရေးရာဦးစီးဌာန- ပြည်တွင်းကုန်သွယ်ရေးဖွံ့ဖြိုးမှုနှင့်သုတေသနဌာနခွဲ
+                    </option>
+                    <option value="4">မူပိုင်ခွင့်ဦးစီးဌာန-ဥပဒေရေးရာနှင့်ကြားနာဖြန်ဖြေရေးဌာနခွဲ</option>
+                    <option value="5">
+                        မြန်မာကုန်သွယ်မှုမြှင့်တင်ရေးအဖွဲ့-ကုန်သွယ်မှုသတင်းအချက်အလက်နှင့်သုတေသနဌာနခွဲ
+                    </option>
+                    <option value="6">
+                        eLibrary-WTO နှင့် အပြည်ပြည်ဆိုင်ရာ ကုန်သွယ်မှုနှင့်သက်ဆိုင်သော စာတမ်းများ
+                    </option>
+                </select>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-md-6 offset-md-2">
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="secret" value="1">
+                    <label for="secret" class="form-label">IsSecret?</label>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 offset-md-2">
+                <button type="button" class="btn btn-sm btn-golden text-uppercase fw-bold rounded-pill w-100 mb-3 ">
+                    Create
+                    New
+                </button>
+            </div>
+        </div>
+    </form>
+</div>

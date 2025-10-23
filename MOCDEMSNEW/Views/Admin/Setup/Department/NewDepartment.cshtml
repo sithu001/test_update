@@ -1,0 +1,67 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = "_AdminLayout";
+    ViewData["Title"] = " New Department";
+}
+<div class="container text-center mt-5 mb-5">
+    <h4 class="custom-text text-uppercase fw-bold">Create New Department</h4>
+</div>
+<div class="container custom-bg shadow-lg">
+    <div class="mb-5">
+        <a href="javascript:history.back()" class="text-secondary text-decoration-none fw-bold">
+            <i class="fa-solid fa-arrow-left me-1"></i> Go Back
+        </a>
+    </div>
+    <form action="" class="ms-md-5">
+        <div class="row mb-3">
+            <div class="col-md-2">
+                <label for="englishName" class="form-label">English Name :</label>
+            </div>
+            <div class="col-md-4">
+                <input type="text" class="form-control" id="englishName" placeholder="Enter English Name">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-md-2">
+                <label for="myanmarName" class="form-label">Myanmar Name :</label>
+            </div>
+            <div class="col-md-4">
+                <input type="text" class="form-control" id="myanmarName" placeholder="Enter Myanmar Name">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-md-2">
+                <label for="departmentCode" class="form-label">Department Code :</label>
+            </div>
+            <div class="col-md-4">
+                <input type="text" class="form-control" id="departmentCode" placeholder="Enter Department Code">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-md-2">
+                <label for="departmentCode2" class="form-label">Department Code 2 :</label>
+            </div>
+            <div class="col-md-4">
+                <input type="text" class="form-control" id="departmentCode2" placeholder="Enter Department Code 2">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-md-2">
+                <label for="sortOrder" class="form-label">Sort Order :</label>
+            </div>
+            <div class="col-md-4">
+                <input type="text" class="form-control" id="sortOrder" placeholder="Enter Sort Order">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 offset-md-2">
+                <button type="button" class="btn btn-sm btn-golden text-uppercase fw-bold rounded-pill w-100 mb-3 ">
+                    Create
+                    New
+                </button>
+            </div>
+        </div>
+    </form>
+</div>

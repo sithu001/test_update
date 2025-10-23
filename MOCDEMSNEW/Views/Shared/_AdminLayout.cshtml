@@ -11,25 +11,39 @@
 
     <title>@ViewData["Title"] - Admin</title>
     <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/custom-css/content.css" />
+    <link rel="stylesheet" href="/fontawesome/css/all.min.css" />    
 
 </head>
 <body>
-    <header class="navbar navbar-expand-lg navbar-light bg-white border-bottom box-shadow mb-3">
-        <a class="navbar-brand" href="/Admin">Admin Dashboard</a>
-        <div class="collapse navbar-collapse">
-            <ul class="navbar-nav me-auto">
-                @* <li class="nav-item"><a class="nav-link" href="/Admin">Home</a></li> *@
-                <li class="nav-item"><a class="nav-link" href="/Admin/Users">Users</a></li>
-            </ul>
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                    <a class="nav-link text-dark"  asp-area="" asp-controller="Account" asp-action="Login">Logout</a>
-                    </li>
-            </ul>
-        </div>
+    <header>
+        <div class="container sticky-top shadow-lg" style="background-color: #ffffffc3; height: 100px;">
+            <div class="row align-items-center py-3 h-100">
+                <div class="col-6 col-sm-6 col-md-6 d-flex justify-content-start align-items-center">
+                    <img src="/imgs/ministry_logo.gif" alt="ministry_logo" class="img-fluid">
+                </div>
+                <div class="col-6 col-sm-6 col-md-6">
+                    <div class="row text-end text-sm-end text-md-start align-items-center">
+                        <div class="col-12 col-sm-8 col-md-3 offset-md-7">
+                            <div>
+                                <span class="text-success">Welcome</span>
+                                <span class="text-warning">User Name</span>
+                            </div>
+                            <div>
+                                <a href="/admin"
+                                   class="fs-6 fw-bold text-warning text-uppercase text-decoration-none">Admin</a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-4 col-md-2">
+                            <a href="#logout" class="btn btn-sm btn-red rounded-pill text-decoration-none fw-bold">Logout</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>       
     </header>
 
-    <div class="container mt-4">
+    <div>
         @RenderBody()
     </div>
 
@@ -39,6 +53,9 @@
         </div>
     </footer>
 
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/fontawesome/js/all.min.js"></script>
     @RenderSection("Scripts", required: false)
 </body>
 </html>

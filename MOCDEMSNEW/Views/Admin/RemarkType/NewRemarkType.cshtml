@@ -1,0 +1,38 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = "_AdminLayout";
+}
+<div class="container text-center mt-5 mb-5">
+    <h5 class="custom-text text-uppercase fw-bold">Create New Remark Type</h5>
+</div>
+<div class="container custom-bg shadow-lg">
+    <div class="mb-5">
+        <a href="javascript:history.back()" class="text-secondary text-decoration-none fw-bold">
+            <i class="fa-solid fa-arrow-left me-1"></i> Go Back
+        </a>
+    </div>
+
+    <form action="" class="ms-md-5">
+        <div class="row mb-3">
+            <div class="col-md-1">
+                <label for="remark" class="form-label">Remark :</label>
+            </div>
+            <div class="col-md-8">
+                <div class="form-floating">
+                    <textarea class="form-control" id="floatingTextarea2" style="height: 80px"></textarea>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 offset-md-1">
+                <button type="button"
+                        class="btn btn-sm btn-golden text-uppercase fw-bold rounded-pill w-100 mb-3 ">
+                    Create
+                    New
+                </button>
+            </div>
+        </div>
+    </form>
+</div>

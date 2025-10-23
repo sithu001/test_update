@@ -7,7 +7,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Views\Admin\Setup\Department\NewFolder\**" />
+    <Content Remove="Views\Admin\Setup\Department\NewFolder\**" />
+    <EmbeddedResource Remove="Views\Admin\Setup\Department\NewFolder\**" />
+    <None Remove="Views\Admin\Setup\Department\NewFolder\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="Data\" />
+    <Folder Include="wwwroot\custom-css\" />
   </ItemGroup>
 
   <ItemGroup>

@@ -1,0 +1,209 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = "_AdminLayout";
+}
+<div class="container text-center mt-5 mb-5">
+    <h5 class="custom-text text-uppercase fw-bold">Create New User</h5>
+</div>
+<div class="container custom-bg shadow-lg">
+    <div class="mb-5">
+        <a href="javascript:history.back()" class="text-secondary text-decoration-none fw-bold">
+            <i class="fa-solid fa-arrow-left me-1"></i> Go Back
+        </a>
+    </div>
+
+    <form action="" class="ms-md-5">
+        <div class="row mb-3">
+            <div class="col-md-2">
+                <label for="fullName" class="form-label">Full Name :</label>
+            </div>
+            <div class="col-md-4">
+                <input type="text" class="form-control" id="fullName" placeholder="Enter Full Name">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-md-2">
+                <label for="userName" class="form-label">User Name :</label>
+            </div>
+            <div class="col-md-4">
+                <input type="text" class="form-control" id="userName" placeholder="Enter User Name">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-md-2">
+                <label for="password" class="form-label">Password :</label>
+            </div>
+            <div class="col-md-4">
+                <input type="text" class="form-control" id="password" placeholder="Enter Password">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-md-2">
+                <label for="position" class="form-label">Position :</label>
+            </div>
+            <div class="col-md-4">
+                <select class="form-select form-select-sm" style="font-size: 14px; line-height: 1.5rem;"
+                        id="position">
+                    <option selected>Select Your Position</option>
+                    <option value="1"> ဒုတိယညွှန်ကြားရေးမှူးချုပ်(လွယ်ကူ/ညှိနှိုင်း)</option>
+                    <option value="2"> ဒုတိယညွှန်ကြားရေးမှူးချုပ်(ကုန်သွယ်ရေး)</option>
+                    <option value="3">လက်ထောက်ညွှန်ကြားရေးမှူး</option>
+                </select>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-md-2">
+                <label for="department" class="form-label">Department :</label>
+            </div>
+            <div class="col-md-4">
+                <select class="form-select form-select-sm" style="font-size: 14px; line-height: 1.5rem;"
+                        id="department">
+                    <option selected>Select Your Department</option>
+                    <option value="1">ကုန်သွယ်ရေးဦးစီးဌာန</option>
+                    <option value="2">စားသုံးသူရေးရာဦးစီးဌာန</option>
+                    <option value="3">eLibrary</option>
+                    <option value="4">ပြည်ထောင်စုဝန်ကြီးရုံး</option>
+                </select>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-md-2">
+                <label for="section" class="form-label">Section :</label>
+            </div>
+            <div class="col-md-4">
+                <select class="form-select form-select-sm" style="font-size: 14px; line-height: 1.5rem;"
+                        id="section">
+                    <option selected>Select Your Section</option>
+                    <option value="1">
+                        WTO နှင့် အပြည်ပြည်ဆိုင်ရာကုန်သွယ်မှုနှင့် ဆက်နွယ်သောအဖွဲ့အစည်းများဌာနခွဲ
+                    </option>
+                    <option value="2">မူဝါဒနှင့်ဥပဒေလုပ်ထုံးလုပ်နည်းစိစစ်ရေးနှင့် လုပ်ငန်းစစ်ဆေးရေးဌာနခွဲ </option>
+                    <option value="3">အုပ်ချုပ်ရေးနှင့်လူ့အရင်းအမြစ်စီမံခန့်ခွဲမှုဌာနခွဲ </option>
+                    <option value="4">ပြည်တွင်းကုန်သွယ်ရေးဖွံ့ဖြိုးမှုနှင့်သုတေသနဌာနခွဲ</option>
+                </select>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-md-2">
+                <label for="subSection" class="form-label">Sub Section :</label>
+            </div>
+            <div class="col-md-4">
+                <select class="form-select form-select-sm" style="font-size: 14px; line-height: 1.5rem;"
+                        id="subSection">
+                    <option selected>Select Your Section</option>
+                    <option value="1">
+                        WTO နှင့် အပြည်ပြည်ဆိုင်ရာကုန်သွယ်မှုနှင့် ဆက်နွယ်သောအဖွဲ့အစည်းများဌာနခွဲ
+                    </option>
+                    <option value="2">မူဝါဒနှင့်ဥပဒေလုပ်ထုံးလုပ်နည်းစိစစ်ရေးနှင့် လုပ်ငန်းစစ်ဆေးရေးဌာနခွဲ </option>
+                    <option value="3">အုပ်ချုပ်ရေးနှင့်လူ့အရင်းအမြစ်စီမံခန့်ခွဲမှုဌာနခွဲ </option>
+                    <option value="4">ပြည်တွင်းကုန်သွယ်ရေးဖွံ့ဖြိုးမှုနှင့်သုတေသနဌာနခွဲ</option>
+                </select>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-md-2">
+                <label for="dateEmployed" class="form-label">Date Employed :</label>
+            </div>
+            <div class="col-md-4">
+                <input type="date" class="form-control" id="dateEmployed" placeholder="Enter Date Employed">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-md-2">
+                <label for="level" class="form-label">Level :</label>
+            </div>
+            <div class="col-md-4">
+                <select class="form-select form-select-sm" style="font-size: 14px; line-height: 1.5rem;" id="level">
+                    <option selected>Select User Level</option>
+                    <option value="1">
+                        Adminstrator (view all,update all,user creation)
+                    </option>
+                    <option value="2">Department Level</option>
+                    <option value="3">Section Level</option>
+                    <option value="4">Upper Level</option>
+                </select>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-md-2">
+                <label for="address1" class="form-label">Address :</label>
+            </div>
+            <div class="col-md-4">
+                <input type="text" class="form-control" id="address1" placeholder="Enter Your Address 1">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-md-4 offset-md-2">
+                <input type="text" class="form-control" id="address2" placeholder="Enter Your Address 2">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-md-4 offset-md-2">
+                <input type="text" class="form-control" id="address3" placeholder="Enter Your Address 3">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-md-4 offset-md-2">
+                <input type="text" class="form-control" id="address4" placeholder="Enter Your Address 4">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-md-2">
+                <label for="phone" class="form-label">Phone :</label>
+            </div>
+            <div class="col-md-4">
+                <input type="text" class="form-control" id="phone" placeholder="Enter Your Phone">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-md-2">
+                <label for="mobile" class="form-label">Mobile :</label>
+            </div>
+            <div class="col-md-4">
+                <input type="text" class="form-control" id="mobile" placeholder="Enter Your Mobile">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-md-2">
+                <label for="email" class="form-label">Email :</label>
+            </div>
+            <div class="col-md-4">
+                <input type="email" class="form-control" id="email" placeholder="Enter Your Email">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-md-2">
+                <label class="form-label">Gender</label>
+            </div>
+            <div class="col-md-4">
+                <div class="form-check-inline">
+                    <input class="form-check-input" type="radio" name="gender" id="male" value="1" checked>
+                    <label class="form-check-label" for="male">Male</label>
+                </div>
+                <div class="form-check-inline">
+                    <input class="form-check-input" type="radio" name="gender" id="female" value="0">
+                    <label class="form-check-label" for="female">Female</label>
+                </div>
+                <div class="form-check-inline">
+                    <label for="head" class="form-label">IsHead? :</label>
+                    <input type="checkbox" class="form-check-input" id="head" value="1">
+                </div>
+                <div class="form-check-inline">
+                    <label for="secret" class="form-label">IsSecret? :</label>
+                    <input type="checkbox" class="form-check-input" id="secret" value="1">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 offset-md-2">
+                <button type="button" class="btn btn-sm btn-golden text-uppercase fw-bold rounded-pill mb-3 w-100">
+                    Create
+                    New
+                </button>
+            </div>
+        </div>
+    </form>
+
+</div>

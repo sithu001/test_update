@@ -2,41 +2,75 @@
 @{
     Layout = "_LoginLayout";
     ViewData["Title"] = "Login";
-
 }
 
-<h1>Login</h1>
-
-<form asp-action="Login" method="post">
-    @Html.AntiForgeryToken()
-
-    <div class="form-group">
-        <label asp-for="Email"></label>
-        <input asp-for="Email" class="form-control" />
-        <span asp-validation-for="Email" class="text-danger"></span>
+<div class="row w-100" style="background-color: #003399;">
+    <div class="col-12 p-3">
+        <img src="~/imgs/login/ministry_logo.gif" alt="Ministry Logo">
     </div>
+</div>
 
-    <div class="form-group">
-        <label asp-for="Password"></label>
-        <input asp-for="Password" type="password" class="form-control" />
-        <span asp-validation-for="Password" class="text-danger"></span>
+<div class="row w-100 custom-bg p-5 align-items-center login-height">
+    <form asp-action="Login" method="post" class="col-12 col-md-6 order-2 order-md-1">
+        <div class="row mb-3 justify-content-end justify-content-md-center">
+            <div class="col-12 col-md-3">
+                <label asp-for="Email" class="fw-bold fs-5">Email</label>
+            </div>
+            <div class="col-12 col-md-8">
+                <input asp-for="Email" class="form-control shadow-lg" placeholder="Enter Your Email" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+        </div>
+
+        <div class="row mb-3 justify-content-center">
+            <div class="col-12 col-md-3">
+                <label asp-for="Password" class="fw-bold fs-5">Password</label>
+            </div>
+            <div class="col-12 col-md-8">
+                <input asp-for="Password" type="password" class="form-control shadow-lg" placeholder="Enter Password" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+        </div>
+
+        <input type="hidden" asp-for="RememberMe" value="false" />
+
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-8 offset-md-3">
+                <button type="submit" class="btn btn-sm btn-golden fw-bold text-uppercase rounded-pill w-100">
+                    Login
+                </button>
+            </div>
+        </div>
+    </form>
+
+    <div class="col-12 col-md-6 text-center mb-3 mb-md-0 order-1 order-md-2">
+        <img src="~/imgs/login/moc_logo.gif" alt="MOC Logo" />
     </div>
+</div>
 
-    @* <div class="form-check">
-        <input asp-for="RememberMe" class="form-check-input" />
-        <label asp-for="RememberMe" class="form-check-label"></label>
-    </div> *@
+<div class="row w-100" style="background-color: #316ac5;">
+    <div class="col-12 col-md-6 text-center">
+        <img src="~/imgs/login/unp.gif" alt="">
+    </div>
+    <div class="col-12 col-md-6 text-center">
+        <img src="~/imgs/login/link2intranet.gif" alt="">
+    </div>
+</div>
 
-    <!-- Hidden field to always send RememberMe = false -->
-    <input type="hidden" asp-for="RememberMe" value="false" />
-    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+<div class="row w-100 mb-3">
+    <span class="text-center" style="color:#316ac5;">
+        Powered by <span class="text-warning fw-bold fs-5">Shwe Digit</span>
+    </span>
+</div>
 
-    <button type="submit" class="btn btn-primary w-100 mt-3">Login</button>
-</form>
+<div class="row">
+    <div class="col-12 text-start text-md-center">
+        <img src="~/imgs/login/warning.jpg" alt="" class="w-100">
+    </div>
+</div>
 
 @section Scripts {
-    @{
-        await Html.RenderPartialAsync("_ValidationScriptsPartial");
-    }
+    @await Html.PartialAsync("_ValidationScriptsPartial")
 }
-

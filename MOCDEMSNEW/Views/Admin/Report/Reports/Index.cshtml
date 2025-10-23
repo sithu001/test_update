@@ -1,0 +1,100 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = "_AdminLayout";
+}
+<div class="container custom-bg mt-5">
+    <div class="mb-5">
+        <a href="javascript:history.back()" class="text-secondary text-decoration-none fw-bold">
+            <i class="fa-solid fa-arrow-left me-1"></i> Go Back
+        </a>
+    </div>
+
+    <div class="text-center mb-5">
+        <h5 class="text-dark text-uppercase fw-bold">
+            <i class="fa-solid fa-file-alt fs-5 px-2"></i>Reports
+        </h5>
+    </div>
+
+    <div class="row">
+        <div class="col-12 col-sm-12 col-md-6">
+            <form action="" class="mb-5 ms-md-5">
+                <div class="row mb-3 justify-content-start">
+                    <div class="col-sm-2 text-dark fw-bold fs-6">
+                        <label for="Name" class="form-label">Search by :</label>
+                    </div>
+                    <div class="col-md-3">
+                        <select class="form-select form-select-sm fs-6" id="month">
+                            <option value="0" selected>All</option>
+                            <option value="1">January</option>
+                            <option value="2">February</option>
+                            <option value="3">March</option>
+                            <option value="4">April</option>
+                            <option value="5">May</option>
+                            <option value="6">June</option>
+                            <option value="7">July</option>
+                            <option value="8">August</option>
+                            <option value="9">September</option>
+                            <option value="10">October</option>
+                            <option value="11">November</option>
+                            <option value="12">December</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3">
+                        <input type="text" id="year" class="form-control" value="">
+                    </div>
+                </div>
+                <div class="row mb-3 justify-content-start">
+                    <div class="col-md-6 offset-sm-2">
+                        <select class="form-select form-select-sm" style="font-size: 14px; line-height: 1.5rem;" id="department">
+                            <option selected>All Department</option>
+                            <option value="1">ပြည်ထောင်စုဝန်ကြီးရုံး</option>
+                            <option value="2">ကုန်သွယ်ရေးဦးစီးဌာန</option>
+                            <option value="3">စားသုံးသူရေးရာဦးစီးဌာန</option>
+                            <option value="4">မူပိုင်ခွင့်ဦးစီးဌာန</option>
+                            <option value="5">မြန်မာကုန်သွယ်မှုမြှင့်တင်ရေးအဖွဲ့ </option>
+                            <option value="6">eLibrary</option>
+                        </select>
+                    </div>
+                </div>
+                <!-- Selected Department Show Report Category -->
+                <div class="row mb-3 justify-content-start">
+                    <div class="col-md-auto offset-sm-2">
+                        <select class="form-select form-select-sm" style="font-size: 14px; line-height: 1.5rem;" id="reportCategory">
+                            <option selected>Select Report Category</option>
+                            <option value="1">ဝန်ကြီးဌာန/ အဖွဲ့အစည်းများ၏ ဖွဲ့စည်းပုံအင်အား၊ ခန့်ထားအင်အားနှင့် လစာစရိတ်စာရင်း</option>
+                            <option value="2">ဝန်ထမ်းအင်အားစာရင်း၊ နေအိမ်ခန်းများချထားမှုစာရင်း နှင့် နေအိမ်ခန်း လိုအပ်ချက်စာရင်း</option>
+                            <option value="3">COVID-19 ဖြစ်စဉ်ကြောင့် ကုန်သွယ်မှုတွင် အကျိုးသက်ရောက်မှုအခြေအနေကို အပတ်စဉ်(တနင်္လာနေ့)တွင် ဝန်ကြီးရုံးနှင့်ညွှန်ကြားရေးမှူးချုပ်ဦးစီးရုံးသို့တင်ပြခြင်း</option>
+                            <option value="4">ညွှန်ကြားရေးမှူးချုပ်နှင့် ဒုတိယညွှန်ကြားရေးမှူးချုပ်များ၏ အပတ်စဉ်လုပ်ငန်းဆောင်ရွက်မည့်အစီအစဉ်</option>
+                            <option value="5">မြန်မာနိုင်ငံ၏ ပြည်ပပို့ကုန်/သွင်းကုန် ကုန်သွယ်မှုစာရင်းများအား လအလိုက်ပြုစုတင်ပြခြင်း </option>
+                            <option value="6">မိမိဘက်(မြဝတီ)နှင့် တစ်ဘက်ထိုင်းနိုင်ငံ(တာ့ခ်ခရိုင်)တို့၏ပို့ကုန်သွင်းကုန် ကုန်သွယ်မှုပမာဏနှိုင်းယှဉ်သည့် သုံးသပ်ချက်တင်ပြခြင်း</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 offset-sm-2">
+                        <button type="button"
+                                class="btn btn-sm btn-golden text-uppercase fw-bold rounded-pill">
+                            <i class="fa-solid fa-magnifying-glass fs-6"></i>Search
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6 d-flex justify-content-start">
+            <h5 class="text-dark fs-5 fw-bold">
+                List of Reports ($department), <span id="getmonth"></span>, <span id="getyear"></span>
+            </h5>
+        </div>
+        <div class="col-md-6 d-flex justify-content-end">
+            <a href="#" class="btn btn-golden btn-sm fs-6 fw-bold rounded-pill mb-3">
+                <i class="fa-solid fa-file-zipper fs-5 me-1"></i>Send to Archive
+            </a>
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,169 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Times New Roman', Times, serif;
+}
+
+.custom-bg {
+	background-color: #b1caff;
+}
+
+.custom-icon {
+	color: #316ac5;
+}
+
+.custom-text {
+	color: #00008B;
+}
+
+.mainNav a.btn:focus {
+	outline: none !important;
+	box-shadow: none !important;
+	background: none !important;
+	border: none !important;
+}
+
+.h-md-200 {
+	height: auto;
+}
+
+@media (min-width: 768px) {
+	.w-md-75 {
+		width: 75% !important;
+	}
+
+	.h-md-75 {
+		height: 75% !important;
+	}
+
+	.h-md-200 {
+		height: 300px !important;
+	}
+}
+
+/*Start custom table */
+.custom-table {
+	border-radius: 30px;
+	overflow: hidden;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+	border-collapse: separate;
+	border-spacing: 0;
+	font-family: Arial, sans-serif;
+}
+
+	.custom-table thead th {
+		background-color: #316ac5;
+		color: #ffff;
+		text-transform: uppercase;
+		letter-spacing: 0.5px;
+		padding: 20px 10px;
+	}
+
+	.custom-table tbody td {
+		transition: background-color 0.5s ease-in-out;
+	}
+
+	.custom-table tbody tr:hover td {
+		background-color: #e0e7ff;
+	}
+
+	.custom-table tbody tr td {
+		background-color: #FFFFFF;
+		color: #000000;
+		transition: background-color 0.5s ease-in-out;
+		padding: 15px 10px;
+		font-size: 15px;
+		vertical-align: middle;
+	}
+
+	.custom-table tbody tr:nth-child(odd) td {
+		background-color: #f1f5ff;
+	}
+
+/*End custom table */
+
+
+/* Start custom btn  */
+.btn-red {
+	background-color: red !important;
+	color: white !important;
+	border: none !important;
+	background-image: none !important;
+	box-shadow: none !important;
+	transition: none !important;
+}
+
+	.btn-red:hover,
+	.btn-red:focus,
+	.btn-red:active,
+	.btn-red:focus-visible {
+		background-color: red !important;
+		color: #FFFFFF !important;
+		background-image: none !important;
+		box-shadow: none !important;
+	}
+
+/* Gold button */
+.btn-gold {
+	background-color: #FFD700 !important;
+	color: #000000 !important;
+	border: none !important;
+	background-image: none !important;
+	box-shadow: none !important;
+	transition: none !important;
+}
+
+	.btn-gold:hover,
+	.btn-gold:focus,
+	.btn-gold:active,
+	.btn-gold:focus-visible {
+		background-color: #FFD700 !important;
+		color: #000000 !important;
+		background-image: none !important;
+		box-shadow: none !important;
+	}
+
+.btn-golden {
+	background-color: #CFB53B;
+	color: #000000 !important;
+	border: none !important;
+	background-image: none !important;
+	box-shadow: none !important;
+	transition: none !important;
+}
+
+	.btn-golden:hover,
+	.btn-golden:focus,
+	.btn-golden:active,
+	.btn-golden:focus-visible {
+		background-color: #CFB53B !important;
+		color: #000000 !important;
+		background-image: none !important;
+		box-shadow: none !important;
+	}
+
+@media (max-width: 767px) {
+
+	/* .action .btn-red,
+    .action .btn-gold, */
+	.action .btn {
+		min-width: 100px;
+		margin-bottom: 5px;
+	}
+
+	.action .btn-success {
+		min-width: 150px;
+		margin-bottom: 5px;
+	}
+}
+
+/* End custom btn  */
+
+/* Login */
+
+@media (min-width : 767px) {
+	.login-height {
+		height: 300px;
+	}
+}

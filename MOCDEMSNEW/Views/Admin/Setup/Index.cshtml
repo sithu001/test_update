@@ -1,0 +1,84 @@
+﻿@{
+    Layout = "_AdminLayout";
+    ViewData["Title"] = "Setup";
+}
+
+<div class="container d-flex justify-content-center align-items-center" style="height: calc(100vh - 100px);">
+    <div class="d-flex flex-column justify-content-center align-items-center h-100 mainNav">
+        <div class="row row-cols-2 row-cols-md-5 g-3 w-100">
+
+            <div class="col">
+                <a asp-action="Department" asp-controller="Admin" class="btn w-100 h-100 position-relative">
+                    <i class="custom-icon fa-solid fa-building-columns w-50 h-50"></i>
+                    <h5 class="text-uppercase text-dark fw-bold fs-6 fs-md-4">Departments</h5>
+                </a>
+            </div>
+
+            <div class="col">
+                <a asp-action="SubDepartment" asp-controller="Admin" class="btn w-100 h-100 position-relative">
+                    <i class="custom-icon fa-solid fa-sitemap w-50 h-50"></i>
+                    <h5 class="text-uppercase text-dark fw-bold fs-6 fs-md-4">Sub Departments</h5>
+                </a>
+            </div>
+
+            <div class="col">
+                <a asp-action="Section" asp-controller="Admin" class="btn w-100 h-100 position-relative">
+                    <i class="custom-icon fa-solid fa-table-columns w-50 h-50"></i>
+                    <h5 class="text-uppercase text-dark fw-bold fs-6 fs-md-4">Sections</h5>
+                </a>
+            </div>
+
+            <div class="col">
+                <a asp-action="Position" asp-controller="Admin" class="btn w-100 h-100 position-relative">
+                    <i class="custom-icon fa-solid fa-user-tie w-50 h-50"></i>
+                    <h5 class="text-uppercase text-dark fw-bold fs-6 fs-md-4">Positions</h5>
+                </a>
+            </div>
+
+            <div class="col">
+                <a asp-action="UserRank" asp-controller="Admin" class="btn w-100 h-100 position-relative">
+                    <i class="custom-icon fa-solid fa-user-group w-50 h-50"></i>
+                    <h5 class="text-uppercase text-dark fw-bold fs-6 fs-md-4">User Rank</h5>
+                </a>
+            </div>
+
+            <div class="col">
+                <a asp-action="SecurityType" asp-controller="Admin" class="btn w-100 h-100 position-relative">
+                    <i class="custom-icon fa-solid fa-user-shield w-50 h-50"></i>
+                    <h5 class="text-uppercase text-dark fw-bold fs-6 fs-md-4">Security Type</h5>
+                </a>
+            </div>
+
+            <div class="col">
+                <a asp-action="Users" asp-controller="Admin" class="btn w-100 h-100 position-relative">
+                    <i class="custom-icon fa-solid fa-users w-50 h-50"></i>
+                    <h5 class="text-uppercase text-dark fw-bold fs-6 fs-md-4">Users</h5>
+                </a>
+            </div>
+
+            <div class="col">
+                <a asp-action="FileManager" asp-controller="Admin" class="btn w-100 h-100 position-relative">
+                    <i class="custom-icon fa-solid fa-folder-open w-50 h-50"></i>
+                    <h5 class="text-uppercase text-dark fw-bold fs-6 fs-md-4">File Manager</h5>
+                </a>
+            </div>
+
+            <div class="col">
+                <a asp-action="MeetingType" asp-controller="Admin" class="btn w-100 h-100 position-relative">
+                    <i class="custom-icon fa-solid fa-video w-50 h-50"></i>
+                    <h5 class="text-uppercase text-dark fw-bold fs-6 fs-md-4">Meeting Type</h5>
+                </a>
+            </div>
+
+            <div class="col">
+                <a asp-action="Venue" asp-controller="Admin" class="btn w-100 h-100 position-relative">
+                    <i class="custom-icon fa-solid fa-location-dot w-50 h-50"></i>
+                    <h5 class="text-uppercase text-dark fw-bold fs-6 fs-md-4">Venue</h5>
+                </a>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+

@@ -1,0 +1,95 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = "_AdminLayout";
+}
+<div class="container custom-bg mt-5">
+    <div class="mb-5">
+        <a href="javascript:history.back()" class="text-secondary text-decoration-none fw-bold">
+            <i class="fa-solid fa-arrow-left me-1"></i> Go Back
+        </a>
+    </div>
+    <div class="text-center mb-5">
+        <h5 class="text-dark text-uppercase fw-bold">
+            <i class="fa-solid fa-sticky-note fs-5 px-2"></i>Report Remark
+            Type
+        </h5>
+    </div>
+
+    <div class="table-responsive">
+        <table class="table custom-table">
+            <thead>
+                <tr>
+                    <th>
+                        No.
+                    </th>
+                    <th>
+                        Remark
+                    </th>
+                    <th style="width: 150px;">
+                        Position
+                    </th>
+                    <th>
+                        Category
+                    </th>
+                    <th style="width: 130px;">
+                        Sort Order
+                    </th>
+                    <th style="width: 200px;">
+                        Action
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-label="No.">1</td>
+                    <td data-label="Remark"> ပြန်တမ်းများအားသတ်မှတ်ချိန်အရောက်ပေးပို့စေရန်။</td>
+                    <td data-label="Position">ပြည်ထောင်စုဝန်ကြီး</td>
+                    <td data-label="Category">မှတ်ချက်များ</td>
+                    <td data-label="Sort Order">99</td>
+                    <td data-label="Action">
+                        <div class="action">
+                            <a href="#"
+                               class="btn btn-gold rounded-pill text-dark fw-bold mb-1 mb-sm-1 mb-md-1 mb-lg-0">
+                                <i class="fa-solid fa-user-pen fs-5"></i>Edit
+                            </a>
+                            <a href="#" class="btn btn-red rounded-pill text-dark fw-bold"
+                               onclick="return confirm('Are you sure to delete')">
+                                <i class="fa-solid fa-trash fs-5"></i>Delete
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-label="No.">2</td>
+                    <td data-label="Remark">
+                        UMFCCI နှင့်အသင်းအဖွဲ့များ၊သက်ဆိုင်ရာဝန်ကြီးဌာနများ၊ဦးပိုင်၊MEC
+                        စသည်တို့သို့အကြောင်းကြားပါ၊အချိန်မီနိုးဆော်ပါ၊အကောင်အထည်ဖော်ရေး
+                        ဆက်စပ်ညှိနှိုင်းဆောင်ရွက်ပေးပါ။
+                    </td>
+                    <td data-label="Position"></td>
+                    <td data-label="Category">မှတ်ချက်များ</td>
+                    <td data-label="Sort Order"></td>
+                    <td data-label="Action">
+                        <div class="action">
+                            <a href="#"
+                               class="btn btn-gold rounded-pill text-dark fw-bold mb-1 mb-sm-1 mb-md-1 mb-lg-0">
+                                <i class="fa-solid fa-user-pen fs-5"></i>Edit
+                            </a>
+                            <a href="#" class="btn btn-red rounded-pill text-dark fw-bold"
+                               onclick="return confirm('Are you sure to delete')">
+                                <i class="fa-solid fa-trash fs-5"></i>Delete
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="">
+        <a asp-action="NewReportRemarkType" asp-controller="Admin" class="btn btn-golden fw-bold rounded-pill mb-3">
+            <i class="fa-solid fa-plus fs-5"></i>New Report Remark Type
+        </a>
+    </div>
+</div>

@@ -1,0 +1,48 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = "_AdminLayout";
+}
+<div class="container custom-bg mt-5">
+    <div class="mb-3">
+        <a href="javascript:history.back()" class="text-secondary text-decoration-none fw-bold">
+            <i class="fa-solid fa-arrow-left me-1"></i> Go Back
+        </a>
+    </div>
+    <div class="text-center mb-4">
+        <h5 class="text-dark text-uppercase fw-bold">
+            <i class="fa-solid fa-user-group fs-5 px-2"></i>User Level
+        </h5>
+    </div>
+
+    <div class="table-responsive">
+        <table class="table custom-table">
+            <thead>
+                <tr>
+                    <th>
+                        No.
+                    </th>
+                    <th>
+                        Level Name
+                    </th>
+                    <th>
+                        User Level
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-label="No.">1</td>
+                    <td data-label="Level Name"> Section Level</td>
+                    <td data-label="User Level">2</td>
+                </tr>
+                <tr>
+                    <td data-label="No.">1</td>
+                    <td data-label="Level Name"> Department Level(own dept)</td>
+                    <td data-label="User Level">3</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
